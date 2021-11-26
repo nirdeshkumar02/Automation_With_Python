@@ -1,0 +1,15 @@
+=> Terraform Vs Python ==>
+
+1. TF manages state of the infrastructure.
+2. TF knows the current state also knows the difference of current state
+    and your configured/desired state but Python doesn't have a state.
+3. TF is idempotent but Python isn't idempotent.
+4. In TF, you declared the end result (which means if you delete any block of
+    configuration, entire configured block from Aws also deleted.) but In Python, You
+    need to explicitly write code to delete the resources.
+
+=> Different Use Cases for BOTO3 ==>
+
+1. More Complex Logic Possible also can do more stuff as it's a aws library.
+    Example :- Monitoring, BackUps, Scheduled Tasks.
+2.
